@@ -1,0 +1,29 @@
+version: '3'
+services:
+  soccer-grid-db:
+    image: postgres
+    volumes:
+      - soccer-grid-db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: soccergrid
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5432:5432"
+
+  soccergrid-service:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    environment:
+      DB_HOST: soccer-grid-db
+      DB_PORT: 5432
+      DB_PASSWORD: password
+      RAILS_ENV: development
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    depends_on:
+      - soccer-grid-db
+
+volumes:
+  soccer-grid-db:
