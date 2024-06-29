@@ -16,7 +16,8 @@ services:
     environment:
       DB_HOST: soccer-grid-db
       DB_PORT: 5432
-      DB_PASSWORD: password
+      DB_USERNAME: soccergrid
+      DB_PASSWORD: 123456
       RAILS_ENV: development
     volumes:
       - .:/myapp
