@@ -44,6 +44,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "dockerfile-rails", "~> 1.6"
   gem 'grape_on_rails_routes', '~> 0.3.2'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
@@ -54,5 +55,6 @@ gem "pg", "~> 1.5"
 
 gem "grape", "~> 2.1"
 gem "grape-entity", "~> 1.0"
+
 
 
