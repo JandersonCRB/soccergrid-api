@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_27_205927) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_08_152152) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,4 +21,36 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_27_205927) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "grid_answers", force: :cascade do |t|
+    t.bigint "grid_id", null: false
+    t.integer "i"
+    t.integer "j"
+    t.string "club_key"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["grid_id"], name: "index_grid_answers_on_grid_id"
+  end
+
+  create_table "grid_tips", force: :cascade do |t|
+    t.bigint "grid_id", null: false
+    t.integer "i"
+    t.integer "j"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["grid_id"], name: "index_grid_tips_on_grid_id"
+  end
+
+  create_table "grids", force: :cascade do |t|
+    t.date "active_on"
+    t.integer "grid_number", null: false
+    t.integer "grid_rows", null: false
+    t.integer "grid_columns", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["active_on"], name: "index_grids_on_active_on", unique: true, where: "(active_on IS NOT NULL)"
+  end
+
+  add_foreign_key "grid_answers", "grids"
+  add_foreign_key "grid_tips", "grids"
 end
