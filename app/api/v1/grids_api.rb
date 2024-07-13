@@ -10,7 +10,21 @@ module V1
         end
       end
 
-      route_param :club_id do
+      route_param :grid_id do
+        desc 'Find a grid by ID',
+             success: {
+               code: 200,
+               message: 'Grid found',
+               model: Entities::GridEntity
+             },
+             failure: [
+               { code: 404, message: 'Grid not found' }
+             ]
+        get do
+          grid = Grids::FindById.new(params).call
+          status 200
+          present grid, with: Entities::GridEntity
+        end
         resource :user_answer do
           desc 'Register a user answer for a given club',
                success: {
