@@ -33,7 +33,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
-# gem "rack-cors"
+gem "rack-cors", "~> 2.0", :require => 'rack/cors'
 
 
 
@@ -59,7 +59,5 @@ gem "grape-entity", "~> 1.0"
 
 gem "grape-swagger-entity", "~> 0.5.4"
 gem 'grape-swagger', '~> 2.1'
-
 gem "grape-swagger-rails", "~> 0.5.0"
-
 gem "sprockets-rails", "~> 3.5", require: 'sprockets/railtie'
