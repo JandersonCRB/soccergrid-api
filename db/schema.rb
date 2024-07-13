@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_08_152152) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_13_150850) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -41,6 +41,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_08_152152) do
     t.index ["grid_id"], name: "index_grid_tips_on_grid_id"
   end
 
+  create_table "grid_user_answers", force: :cascade do |t|
+    t.bigint "grid_id", null: false
+    t.integer "i"
+    t.integer "j"
+    t.string "answer"
+    t.string "remote_ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["grid_id"], name: "index_grid_user_answers_on_grid_id"
+  end
+
   create_table "grids", force: :cascade do |t|
     t.date "active_on"
     t.integer "grid_number", null: false
@@ -53,4 +64,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_08_152152) do
 
   add_foreign_key "grid_answers", "grids"
   add_foreign_key "grid_tips", "grids"
+  add_foreign_key "grid_user_answers", "grids"
 end
