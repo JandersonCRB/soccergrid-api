@@ -1,5 +1,5 @@
 class RequestStatusError < StandardError
-  attr_reader :status, :message
+  attr_reader :status, :message, :data
 
   def initialize(status, message, data)
     @status = status
