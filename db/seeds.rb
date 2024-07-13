@@ -32,6 +32,7 @@ clubs = [
   { name: "Vitória", club_key: "vitoria" },
 ]
 
+# Serie B
 clubs += [
   { name: "Amazonas", club_key: "amazonas" },
   { name: "América-MG", club_key: "america_mg" },
@@ -55,6 +56,7 @@ clubs += [
   { name: "Vila Nova", club_key: "vila_nova" },
 ]
 
+# Serie C
 clubs += [
   { name: "ABC", club_key: "abc" },
   { name: "Aparecidense", club_key: "aparecidense" },
@@ -108,4 +110,6 @@ grid_create_params = {
   }
 }
 
-Grids::Create.new(grid_create_params).call
+unless Grid.exists?(active_on: Date.today)
+  Grids::Create.new(grid_create_params).call
+end
