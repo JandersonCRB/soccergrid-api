@@ -8,4 +8,6 @@ class BaseAPI < Grape::API
   end
 
   mount V1::API
+
+  add_swagger_documentation
 end

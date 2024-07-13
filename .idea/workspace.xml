@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="adding grid/create grid and its relationships">
+    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="removing database cleaner gem">
       <change beforePath="$PROJECT_DIR$/.idea/soccergrid-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soccergrid-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/base_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/base_api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/v1/api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/exceptions/request_status_error.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/exceptions/request_status_error.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/grid_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/grid_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/grid_tip_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/grid_tip_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -57,7 +59,8 @@
     "RSpec.Grids::Create.executor": "Run",
     "RSpec.Grids::FindToday.executor": "Run",
     "RSpec.clubs_api_find_all_spec.executor": "Run",
-    "Rake.spec: soccergrid-api.executor": "Run",
+    "Rails.soccergrid-api.executor": "Debug",
+    "Rake.spec: soccergrid-api.executor": "Coverage",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -72,44 +75,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Rake.spec: soccergrid-api">
-    <configuration name="Clubs::FindAll when there are no clubs returns an empty array" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="soccergrid-api" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/services/clubs/find_all_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Clubs::FindAll when there are no clubs returns an empty array" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_EXAMPLE_MATCHES" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="LINE_NUMBER_EXAMPLE_IDS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Rails.soccergrid-api">
     <configuration name="Grids API GET /grids/today when there is no grid today has the correct error message" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="soccergrid-api" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -339,13 +305,21 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="RSpec.Grids API" />
         <item itemvalue="RSpec.Grids API GET /grids/today when there is no grid today has the correct error message" />
         <item itemvalue="RSpec.Grids::FindToday" />
         <item itemvalue="RSpec.Grids::Create" />
-        <item itemvalue="RSpec.Clubs::FindAll when there are no clubs returns an empty array" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +333,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719498816291</updated>
       <workItem from="1719498817410" duration="15272000" />
-      <workItem from="1720448125915" duration="17098000" />
+      <workItem from="1720448125915" duration="20119000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -377,7 +351,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720480076043</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creating get today grid endpoint">
+      <option name="closed" value="true" />
+      <created>1720832162439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720832162439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removing database cleaner gem">
+      <option name="closed" value="true" />
+      <created>1720832216508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720832216508</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removing database cleaner gem">
+      <option name="closed" value="true" />
+      <created>1720832226254</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720832226254</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,17 +395,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="adding grid/create grid and its relationships" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding grid/create grid and its relationships" />
+    <MESSAGE value="creating get today grid endpoint" />
+    <MESSAGE value="removing database cleaner gem" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing database cleaner gem" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/soccergrid_api@clubs_api_find_all_spec.rcov" NAME="clubs_api_find_all_spec Coverage Results" MODIFIED="1719683634209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@API__1_.rcov" NAME="API (1) Coverage Results" MODIFIED="1719529811436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
-    <SUITE FILE_PATH="coverage/soccergrid_api@Clubs__FindAll_when_there_are_no_clubs_returns_an_empty_array.rcov" NAME="Clubs::FindAll when there are no clubs returns an empty array Coverage Results" MODIFIED="1719683836941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@All_specs_in_spec__soccergrid_api.rcov" NAME="All specs in spec: soccergrid-api Coverage Results" MODIFIED="1719683704620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
-    <SUITE FILE_PATH="coverage/soccergrid_api@spec__soccergrid_api.rcov" NAME="spec: soccergrid-api Coverage Results" MODIFIED="1720832053289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
+    <SUITE FILE_PATH="coverage/soccergrid_api@spec__soccergrid_api.rcov" NAME="spec: soccergrid-api Coverage Results" MODIFIED="1720832374807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Clubs__FindAll.rcov" NAME="Clubs::FindAll Coverage Results" MODIFIED="1719682695141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids_API.rcov" NAME="Grids API Coverage Results" MODIFIED="1720832009166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@API.rcov" NAME="API Coverage Results" MODIFIED="1719529015899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
+    <SUITE FILE_PATH="coverage/soccergrid_api@clubs_api_find_all_spec.rcov" NAME="clubs_api_find_all_spec Coverage Results" MODIFIED="1719683634209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
+    <SUITE FILE_PATH="coverage/soccergrid_api@soccergrid_api.rcov" NAME="soccergrid-api Coverage Results" MODIFIED="1720835053527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
+    <SUITE FILE_PATH="coverage/soccergrid_api@Clubs__FindAll_when_there_are_no_clubs_returns_an_empty_array.rcov" NAME="Clubs::FindAll when there are no clubs returns an empty array Coverage Results" MODIFIED="1719683836941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids_API_GET__grids_today_when_there_is_no_grid_today_has_the_correct_error_message.rcov" NAME="Grids API GET /grids/today when there is no grid today has the correct error message Coverage Results" MODIFIED="1720831403662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids__Create.rcov" NAME="Grids::Create Coverage Results" MODIFIED="1720480008141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids__FindToday.rcov" NAME="Grids::FindToday Coverage Results" MODIFIED="1720483861145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
