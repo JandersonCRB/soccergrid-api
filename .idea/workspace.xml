@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="adding swagger">
+    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="adding user answer endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/v1/grids_api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/v1/grids_api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Rake.spec: soccergrid-api">
+  <component name="RunManager" selected="Rails.soccergrid-api">
     <configuration name="Grids API (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="soccergrid-api" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -334,7 +333,7 @@
       <updated>1719498816291</updated>
       <workItem from="1719498817410" duration="15272000" />
       <workItem from="1720448125915" duration="20957000" />
-      <workItem from="1720852258813" duration="5208000" />
+      <workItem from="1720852258813" duration="5501000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -384,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720835165539</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding user answer endpoint">
+      <option name="closed" value="true" />
+      <created>1720891676077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720891676077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,19 +414,20 @@
     <MESSAGE value="creating get today grid endpoint" />
     <MESSAGE value="removing database cleaner gem" />
     <MESSAGE value="adding swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding swagger" />
+    <MESSAGE value="adding user answer endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding user answer endpoint" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/soccergrid_api@API__1_.rcov" NAME="API (1) Coverage Results" MODIFIED="1719529811436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@All_specs_in_spec__soccergrid_api.rcov" NAME="All specs in spec: soccergrid-api Coverage Results" MODIFIED="1719683704620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids__UserAnswer.rcov" NAME="Grids::UserAnswer Coverage Results" MODIFIED="1720890245775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
-    <SUITE FILE_PATH="coverage/soccergrid_api@spec__soccergrid_api.rcov" NAME="spec: soccergrid-api Coverage Results" MODIFIED="1720891617163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
+    <SUITE FILE_PATH="coverage/soccergrid_api@spec__soccergrid_api.rcov" NAME="spec: soccergrid-api Coverage Results" MODIFIED="1720891646981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Clubs__FindAll.rcov" NAME="Clubs::FindAll Coverage Results" MODIFIED="1719682695141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids_API.rcov" NAME="Grids API Coverage Results" MODIFIED="1720832009166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@API.rcov" NAME="API Coverage Results" MODIFIED="1719529015899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids_API__1_.rcov" NAME="Grids API (1) Coverage Results" MODIFIED="1720891590195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@clubs_api_find_all_spec.rcov" NAME="clubs_api_find_all_spec Coverage Results" MODIFIED="1719683634209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
-    <SUITE FILE_PATH="coverage/soccergrid_api@soccergrid_api.rcov" NAME="soccergrid-api Coverage Results" MODIFIED="1720835115715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
+    <SUITE FILE_PATH="coverage/soccergrid_api@soccergrid_api.rcov" NAME="soccergrid-api Coverage Results" MODIFIED="1720891683522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Clubs__FindAll_when_there_are_no_clubs_returns_an_empty_array.rcov" NAME="Clubs::FindAll when there are no clubs returns an empty array Coverage Results" MODIFIED="1719683836941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids_API_GET__grids_today_when_there_is_no_grid_today_has_the_correct_error_message.rcov" NAME="Grids API GET /grids/today when there is no grid today has the correct error message Coverage Results" MODIFIED="1720831403662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
     <SUITE FILE_PATH="coverage/soccergrid_api@Grids__Create.rcov" NAME="Grids::Create Coverage Results" MODIFIED="1720480008141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />

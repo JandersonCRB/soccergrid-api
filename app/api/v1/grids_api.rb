@@ -12,7 +12,16 @@ module V1
 
       route_param :club_id do
         resource :user_answer do
-          desc 'Register a user answer for a given club'
+          desc 'Register a user answer for a given club',
+               success: {
+                 code: 200,
+                 message: 'User answer is correct',
+                 model: Entities::UserAnswerResponseEntity
+               },
+               failure: [
+                 { code: 404, message: 'Grid not found' },
+                 { code: 404, message: 'Cell out of bounds' }
+               ]
           params do
             requires :grid_id, type: Integer, desc: 'Grid ID'
             requires :i, type: Integer, desc: 'Row index'
