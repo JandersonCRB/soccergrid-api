@@ -1,0 +1,2 @@
+class BrazilianSerieAChampion < ApplicationRecord
+end

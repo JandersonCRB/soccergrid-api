@@ -8,6 +8,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+require './db/seeds/brazilian_serie_a'
+
 # Serie A
 clubs = [
   { name: "Athletico-PR", club_key: "athletico_pr" },
@@ -113,3 +115,5 @@ grid_create_params = {
 unless Grid.exists?(active_on: Date.today)
   Grids::Create.new(grid_create_params).call
 end
+
+seed_serie_a_champions
