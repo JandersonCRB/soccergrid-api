@@ -89,7 +89,7 @@ end
 grid_create_params = {
   grid: {
     active_on: Date.today,
-    grid_number: 1,
+    grid_number: (Grid.last.grid_number + 1) || 1,
     grid_rows: 3,
     grid_columns: 3,
     tips: [
