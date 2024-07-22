@@ -6,6 +6,7 @@ module Grids
     end
 
     def call
+      Rails.logger.info("Creating club with #{params}")
       run_validations
       grid = build_grid
       grid.save!
