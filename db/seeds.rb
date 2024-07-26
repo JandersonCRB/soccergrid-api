@@ -9,6 +9,7 @@
 #   end
 
 require './db/seeds/brazilian_serie_a'
+require './db/seeds/club_colors'
 
 # Serie A
 clubs = [
@@ -86,32 +87,6 @@ clubs.each do |club|
   Club.find_or_create_by!(club)
 end
 
-grid_create_params = {
-  grid: {
-    active_on: Date.today,
-    grid_number: (Grid.last.grid_number + 1) || 1,
-    grid_rows: 3,
-    grid_columns: 3,
-    tips: [
-      { i: 0, description: "Possui mais de 2 copas do Brasil" },
-      { i: 1, description: "Possui mais de 2 campeonatos brasileiros" },
-      { i: 2, description: "Possui mais de 20 campeonatos estaduais" },
-      { j: 0, description: "Possui a cor vermelha no escudo" },
-      { j: 1, description: "É da região nordeste" },
-      { j: 2, description: "Já disputou o mundial de interclubes" }
-    ],
-    answers: {
-      "0 0" => %w[flamengo athletico_pr],
-      "0 1" => %w[sport bahia],
-      "0 2" => %w[corinthians sao_paulo],
-      "1 0" => %w[fluminense internacional],
-      "2 0" => %w[vasco palmeiras],
-      "2 1" => %w[botafogo gremio],
-      "2 2" => %w[cruzeiro atletico_mg]
-    }
-  }
-}
-
 dates = Date.today .. (Date.today + 365)
 
 dates.each do |date|
@@ -147,3 +122,4 @@ dates.each do |date|
 end
 
 seed_serie_a_champions
+seed_club_colors
