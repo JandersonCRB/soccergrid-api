@@ -1,0 +1,2 @@
+class ClubRegion < ApplicationRecord
+end
