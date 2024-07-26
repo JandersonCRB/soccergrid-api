@@ -1,0 +1,72 @@
+def seed_club_foundation_dates
+  p 'Seeding Club Foundation Dates'
+
+  club_foundation_dates.each do |club_key, foundation_date|
+    ClubFoundation.find_or_create_by!(club_key: club_key, foundation_date: foundation_date)
+  end
+end
+
+def club_foundation_dates
+  {
+    "athletico_pr": "1924-03-26",
+    "atletico_go": "1937-04-02",
+    "atletico_mg": "1908-03-25",
+    "bahia": "1931-01-01",
+    "botafogo": "1904-08-12",
+    "bragantino": "1928-01-08",
+    "corinthians": "1910-09-01",
+    "criciuma": "1947-05-13",
+    "cruzeiro": "1921-01-02",
+    "cuiaba": "2001-12-10",
+    "flamengo": "1895-11-17",
+    "fluminense": "1902-07-21",
+    "fortaleza": "1918-10-18",
+    "gremio": "1903-09-15",
+    "internacional": "1909-04-04",
+    "juventude": "1913-06-29",
+    "palmeiras": "1914-08-26",
+    "sao_paulo": "1930-01-25",
+    "vasco": "1898-08-21",
+    "vitoria": "1899-05-13",
+    "amazonas": "2019-05-23",
+    "america_mg": "1912-04-30",
+    "avai": "1923-09-01",
+    "botafogo_sp": "1918-10-12",
+    "brusque": "1987-10-12",
+    "ceara": "1914-06-02",
+    "chapecoense": "1973-05-10",
+    "coritiba": "1909-10-12",
+    "crb": "1912-09-20",
+    "goias": "1943-04-06",
+    "guarani": "1911-04-02",
+    "ituano": "1947-05-24",
+    "mirassol": "1925-11-09",
+    "novorizontino": "2010-03-13",
+    "operario": "1912-05-01",
+    "paysandu": "1914-02-02",
+    "ponte_preta": "1900-08-11",
+    "santos": "1912-04-14",
+    "sport": "1905-05-13",
+    "vila_nova": "1943-07-29",
+    "abc": "1915-06-29",
+    "aparecidense": "1985-10-22",
+    "athletic_club": "1909-06-27",
+    "botafogo_pb": "1931-09-28",
+    "caxias": "1935-04-10",
+    "confianca": "1936-05-01",
+    "csa": "1913-09-07",
+    "ferroviaria_sp": "1950-04-12",
+    "ferroviario_ce": "1933-05-09",
+    "figueirense": "1921-06-12",
+    "floresta": "1954-11-09",
+    "londrina": "1956-04-05",
+    "nautico": "1901-04-07",
+    "remo": "1905-02-05",
+    "sampaio_correa": "1923-03-25",
+    "sao_bernardo": "2004-12-20",
+    "sao_jose_rs": "1913-05-24",
+    "tombense": "1914-09-07",
+    "volta_redonda": "1976-02-09",
+    "ypiranga_rs": "1924-08-18"
+  }
+end

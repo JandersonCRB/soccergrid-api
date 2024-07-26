@@ -1,0 +1,2 @@
+class ClubFoundation < ApplicationRecord
+end

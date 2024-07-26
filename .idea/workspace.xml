@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="adding brazilian serie a data">
+    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="Adding club regions">
+      <change beforePath="$PROJECT_DIR$/.idea/soccergrid-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soccergrid-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/entities/grid_entity.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/entities/grid_entity.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/v1/grids/grid_api_today_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/v1/grids/grid_api_today_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JandersonCRB&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JandersonCRB/soccergrid-api&quot;,
+    &quot;accountId&quot;: &quot;64e1c40f-3b78-49fe-b78e-4c066317832c&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -41,85 +53,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml.soccer-grid-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.soccergrid-service: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "RSpec.API (1).executor": "Run",
-    "RSpec.API.executor": "Run",
-    "RSpec.All specs in spec: soccergrid-api.executor": "Run",
-    "RSpec.Clubs::FindAll when there are no clubs returns an empty array.executor": "Run",
-    "RSpec.Clubs::FindAll.executor": "Run",
-    "RSpec.Grids API (1).executor": "Run",
-    "RSpec.Grids API GET /grids/:grid_id when grid exists has 200 response.executor": "Run",
-    "RSpec.Grids API GET /grids/:grid_id when grid exists returns the grid with the correct attributes.executor": "Run",
-    "RSpec.Grids API GET /grids/:grid_id when grid exists returns the grid.executor": "Run",
-    "RSpec.Grids API GET /grids/:grid_id when grid exists.executor": "Run",
-    "RSpec.Grids API GET /grids/today when there is no grid today has the correct error message.executor": "Run",
-    "RSpec.Grids API GET /grids/today with a successful request returns a grip_tip object.executor": "Run",
-    "RSpec.Grids API.executor": "Run",
-    "RSpec.Grids::Create.executor": "Run",
-    "RSpec.Grids::FindById.executor": "Run",
-    "RSpec.Grids::FindToday.executor": "Run",
-    "RSpec.Grids::UserAnswer when the answer is correct creates a new GridUserAnswer with the correct attributes.executor": "Run",
-    "RSpec.Grids::UserAnswer.executor": "Run",
-    "RSpec.clubs_api_find_all_spec.executor": "Run",
-    "Rails.soccergrid-api.executor": "Run",
-    "Rake.spec: soccergrid-api.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_directory_selection": "/Users/janderson/Projects/soccergrid-api/spec",
-    "last_opened_file_path": "/Users/janderson/Projects/soccergrid-api",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.soccer-grid-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.soccergrid-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.API (1).executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.API.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.All specs in spec: soccergrid-api.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Clubs::FindAll when there are no clubs returns an empty array.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Clubs::FindAll.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API (1).executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API GET /grids/:grid_id when grid exists has 200 response.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API GET /grids/:grid_id when grid exists returns the grid with the correct attributes.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API GET /grids/:grid_id when grid exists returns the grid.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API GET /grids/:grid_id when grid exists.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API GET /grids/today when there is no grid today has the correct error message.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API GET /grids/today with a successful request returns a grip_tip object.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids API.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids::Create.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids::FindById.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids::FindToday.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids::UserAnswer when the answer is correct creates a new GridUserAnswer with the correct attributes.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.Grids::UserAnswer.executor&quot;: &quot;Run&quot;,
+    &quot;RSpec.clubs_api_find_all_spec.executor&quot;: &quot;Run&quot;,
+    &quot;Rails.soccergrid-api.executor&quot;: &quot;Run&quot;,
+    &quot;Rake.spec: soccergrid-api.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/janderson/Projects/soccergrid-api/spec&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/janderson/Projects/soccergrid-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="RSpec.Grids API (1)">
-    <configuration name="Grids API GET /grids/:grid_id when grid exists has 200 response" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="soccergrid-api" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/v1/grids/grid_api_find_by_id_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Grids API GET /grids/:grid_id when grid exists has 200 response" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_EXAMPLE_MATCHES" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="LINE_NUMBER_EXAMPLE_IDS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
+}</component>
+  <component name="RunManager" selected="Rails.soccergrid-api">
     <configuration name="Grids API GET /grids/:grid_id when grid exists returns the grid with the correct attributes" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="soccergrid-api" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -349,15 +324,35 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.soccer-grid-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="soccer-grid-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.soccer-grid-db: Compose Deployment" />
         <item itemvalue="RSpec.Grids API (1)" />
         <item itemvalue="RSpec.Grids API GET /grids/today with a successful request returns a grip_tip object" />
         <item itemvalue="RSpec.Grids API" />
         <item itemvalue="RSpec.Grids API GET /grids/:grid_id when grid exists returns the grid with the correct attributes" />
-        <item itemvalue="RSpec.Grids API GET /grids/:grid_id when grid exists has 200 response" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-RM-241.18034.63" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -371,6 +366,8 @@
       <workItem from="1719498817410" duration="15272000" />
       <workItem from="1720448125915" duration="20957000" />
       <workItem from="1720852258813" duration="14094000" />
+      <workItem from="1721787161229" duration="1438000" />
+      <workItem from="1722021527365" duration="5286000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -460,7 +457,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721166212175</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixing typo">
+      <option name="closed" value="true" />
+      <created>1721788000379</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721788000379</updated>
+    </task>
+    <task id="LOCAL-00013" summary="registering club colors">
+      <option name="closed" value="true" />
+      <created>1722023508209</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722023508209</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adding club regions">
+      <option name="closed" value="true" />
+      <created>1722025923827</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722025923827</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adding club regions">
+      <option name="closed" value="true" />
+      <created>1722025930612</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722025930612</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +516,11 @@
     <MESSAGE value="allowing * cors" />
     <MESSAGE value="creating find grid by id endpoint" />
     <MESSAGE value="adding brazilian serie a data" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding brazilian serie a data" />
+    <MESSAGE value="does not create grid if it already exists" />
+    <MESSAGE value="fixing typo" />
+    <MESSAGE value="registering club colors" />
+    <MESSAGE value="Adding club regions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding club regions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/soccergrid_api@API__1_.rcov" NAME="API (1) Coverage Results" MODIFIED="1719529811436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
