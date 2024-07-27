@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="Adding seeds for brazilian cup">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="24981e5c-c1de-40e2-982c-ac9239d9e9bf" name="Changes" comment="creating task for generating grids">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds/brazilian_cup.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds/brazilian_cup.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tasks/generate_grid.rake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasks/generate_grid.rake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +354,7 @@
       <workItem from="1720448125915" duration="20957000" />
       <workItem from="1720852258813" duration="14094000" />
       <workItem from="1721787161229" duration="1438000" />
-      <workItem from="1722021527365" duration="15738000" />
+      <workItem from="1722021527365" duration="16857000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -494,7 +492,47 @@
       <option name="project" value="LOCAL" />
       <updated>1722097274331</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ignoring idea files">
+      <option name="closed" value="true" />
+      <created>1722104800055</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722104800055</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ignoring idea files">
+      <option name="closed" value="true" />
+      <created>1722104838876</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722104838876</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fixing typos on brazilian cup">
+      <option name="closed" value="true" />
+      <created>1722104856372</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722104856372</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updating schema">
+      <option name="closed" value="true" />
+      <created>1722104876995</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722104876995</updated>
+    </task>
+    <task id="LOCAL-00022" summary="creating task for generating grids">
+      <option name="closed" value="true" />
+      <created>1722104928715</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722104928715</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +565,11 @@
     <MESSAGE value="Adding club regions" />
     <MESSAGE value="Adding club foundations" />
     <MESSAGE value="Adding seeds for brazilian cup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding seeds for brazilian cup" />
+    <MESSAGE value="ignoring idea files" />
+    <MESSAGE value="fixing typos on brazilian cup" />
+    <MESSAGE value="updating schema" />
+    <MESSAGE value="creating task for generating grids" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating task for generating grids" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/soccergrid_api@API__1_.rcov" NAME="API (1) Coverage Results" MODIFIED="1719529811436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="soccergrid-api" />
