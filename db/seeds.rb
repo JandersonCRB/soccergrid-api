@@ -12,6 +12,7 @@ require './db/seeds/brazilian_serie_a'
 require './db/seeds/club_colors'
 require './db/seeds/club_regions'
 require './db/seeds/club_foundation_dates'
+require './db/seeds/brazilian_cup'
 
 # Serie A
 clubs = [
@@ -127,3 +128,4 @@ seed_serie_a_champions
 seed_club_colors
 seed_club_regions
 seed_club_foundation_dates
+seed_brazilian_cup
