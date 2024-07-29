@@ -76,9 +76,31 @@ namespace :grid do
           end
           { description: description, club_keys: club_keys }
         }
+      },
+      {
+        id: 3,
+        randomizeFn: lambda {
+          colors = {
+            "red" => "Vermelha",
+            "black" => "Preta",
+            "white" => "Branca",
+            "green" => "Verde",
+            "blue" => "Azul",
+            "yellow" => "Amarela",
+            "claret" => "Bordô"
+          }
+
+          color = colors.keys.sample
+
+          description = "Possui oficialmente a cor #{colors[color]}"
+          club_keys = ClubColor.where(color: color).pluck(:club_key)
+
+          { description: description, club_keys: club_keys }
+        }
       }
     ]
     p tip_possibilities[0][:randomizeFn].call
     p tip_possibilities[1][:randomizeFn].call
+    p tip_possibilities[2][:randomizeFn].call
   end
 end
